@@ -1,0 +1,12 @@
+version: "3"
+services:
+    addition-server:
+        image: lborupj/additional-server
+        depends_on:
+            - redis
+        ports:
+            - 5000:8080
+    redis:
+        image: redis:3-alpine
+    
+        
